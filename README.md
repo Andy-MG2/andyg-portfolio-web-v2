@@ -18,7 +18,7 @@ Focus: Showcasing my work in **AI, data, and SWE**
 ## Installation
 
 ```bash
-git clone https://github.com/<Andy-MG2>/andyg-portfolio-web-v2.git
+git clone https://github.com/Andy-MG2/andyg-portfolio-web-v2.git
 cd andyg-portfolio-web-v2
 npm install
 npm run dev
