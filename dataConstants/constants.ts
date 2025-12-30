@@ -35,9 +35,9 @@ export const RadarSkills = [
       title: "Languages",
       axes: [
         { label: "Python", score: 4 },
-        { label: "TypeScript", score: 3 },
-        { label: "SQL", score: 3 },
         { label: "CSS", score: 3 },
+        { label: "SQL", score: 3 },
+        { label: "TypeScript", score: 3 },
         { label: "HTML", score: 3 },
         { label: "C", score: 4 },
       ],
