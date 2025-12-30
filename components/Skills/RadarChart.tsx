@@ -32,7 +32,7 @@ function clamp(n: number, min: number, max: number) {
   return Math.max(min, Math.min(max, n));
 }
 
-export function RadarChart({ topic }: { topic: RadarTopic }) {
+const RadarChart = ({ topic }: { topic: RadarTopic }) => {
   const max = topic.max ?? 5;
 
   const labels = useMemo(() => topic.axes.map((a) => a.label), [topic.axes]);
@@ -111,7 +111,6 @@ export function RadarChart({ topic }: { topic: RadarTopic }) {
           lineWidth: 1,
           },
           pointLabels: {
-            // If labels collide, shorten your axis labels or reduce axis count
             font: { size: 14 },
           },
         },
@@ -130,3 +129,4 @@ export function RadarChart({ topic }: { topic: RadarTopic }) {
 }
 
 
+export default RadarChart;
