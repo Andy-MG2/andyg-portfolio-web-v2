@@ -8,7 +8,7 @@ const ContactMe = () => {
     <div className = "justify-center flex font-bold font-work-sans">
       Connect With Me:
     </div>
-    <div className="bg-white flex justify-center items-center h-16 space-x-4 font-bold ">
+    <div className="bg-white flex justify-center items-center h-16 space-x-4 font-bold dark:bg-black dark:text-white">
       {Contact.map((link) => (
         <Link key={link.id} href={link.url} scroll>
           <Image className = "rounded-xl shadow-lg transition-transform duration-300 ease-out hover:scale-110 cursor-pointer"

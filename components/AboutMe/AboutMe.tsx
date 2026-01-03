@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="flex items-center justify-center">
       <div className="relative aspect-square w-[min(82vw,360px)] overflow-visible">
-        <SpinningText className="absolute inset-0 font-extrabold font-work-sans text-sm sm:text-base" radius={17}>
+        <SpinningText className="absolute inset-0 font-extrabold font-work-sans text-sm sm:text-base dark:bg-black dark:text-white" radius={17}>
           I • write • code • and • stuff •
         </SpinningText>
 

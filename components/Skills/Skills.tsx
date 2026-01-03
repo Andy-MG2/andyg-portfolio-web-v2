@@ -10,15 +10,15 @@ const Skills = () => {
       <div className="relative mx-auto max-w-6xl px-6">
         <div className="mb-10 text-center">
           <div className="mb-10 text-center">
-            <p className="text-sm font-medium text-black">Skills</p>
-            <h2 className="mt-2 text-3xl font-semibold  text-black-100 font-work-sans">
+            <p className="text-sm font-medium text-zinc dark:text-white ">Skills</p>
+            <h2 className="mt-2 text-3xl font-semibold  text-black-100 font-work-sans dark:text-white">
               Current Skill Stats
             </h2>
-            <p className="mx-auto mt-2 max-w-xl text-sm text-zinc">
+            <p className="mx-auto mt-2 max-w-xl text-sm text-zinc dark: dark:text-white">
               Based on use frequency and recent use, terms and conditions may apply
             </p>
 
-            <div className="mx-auto mt-6 h-px w- bg-linear-to-r from-transparent via-skill-violet/40 to-transparent" />
+            <div className="mx-auto mt-6 h-1 w-full bg-linear-to-r from-transparent via-skill-violet/40 to-transparent" />
           </div>
         </div>
 
@@ -38,7 +38,7 @@ const Skills = () => {
                 ].join(" ")}
               >
                 {/* card + glow behind chart */}
-                <div className="relative overflow-hidden rounded-2xl border border-zinc-200 bg-white/70 p-6 shadow-sm backdrop-blur dark:border-zinc-800 dark:bg-zinc-950/60">
+                <div className="relative overflow-hidden rounded-2xl border border-zinc-200 bg-white/70 p-6 shadow-sm backdrop-blur dark:bg-zinc-950/60">
                   <h2 className="mb-5 text-center font-semibold text-black font-work-sans">
                     {skills.title}
                   </h2>
