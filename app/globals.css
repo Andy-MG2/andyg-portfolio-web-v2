@@ -1,4 +1,14 @@
 @import "tailwindcss";
 @config "../tailwind.config.mjs";
+html { scrollbar-gutter: stable; }
 
-
+@layer utilities {
+  .radar-haze{
+    @apply pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(167,139,250,0.22),rgba(244,114,182,0.10),transparent_65%)]
+  }
+}
+html { scroll-behavior: smooth; }
+::view-transition-old(root), ::view-transition-new(root) {
+    animation: none;
+    mix-blend-mode: normal;
+}

@@ -12,6 +12,8 @@ import {
   Legend,
   ChartOptions,
 } from "chart.js";
+
+import { useInView } from 'react-intersection-observer';
 import { Bold } from "lucide-react";
 
 // Register once on the client
@@ -44,11 +46,17 @@ const RadarChart = ({ topic }: { topic: RadarTopic }) => {
   // Start at 0 so the chart animates outward on load
   const [values, setValues] = useState<number[]>(() => target.map(() => 0));
 
+  // Trigger animation after being 30% in view
+  const  {ref, inView} = useInView({
+    triggerOnce: true,
+    threshold: 0.3,
+  })
   useEffect(() => {
-    // Trigger animation after first paint
+    if(inView){
     const t = requestAnimationFrame(() => setValues(target));
     return () => cancelAnimationFrame(t);
-  }, [target]);
+    }
+  }, [target, inView]);
 
   const data = useMemo(
     () => ({
@@ -120,7 +128,7 @@ const RadarChart = ({ topic }: { topic: RadarTopic }) => {
   );
 
   return (
-    <div className="w-full max-w-xl">
+    <div ref = {ref} className="w-full max-w-xl">
       <div className="h-80 w-full">
         <Radar data={data} options={options} />
       </div>

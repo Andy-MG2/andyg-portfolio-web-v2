@@ -4,7 +4,6 @@ import React, { ComponentPropsWithoutRef } from "react"
 import { motion, Transition, Variants } from "motion/react"
 
 import { cn } from "@/lib/utils"
-import Avatar from "./Avatar"
 
 interface SpinningTextProps extends ComponentPropsWithoutRef<"div"> {
   children: string | string[]
@@ -36,7 +35,7 @@ export function SpinningText({
   children,
   duration = 15,
   reverse = false,
-  radius = 10,
+  radius = 17,
   transition,
   variants,
   className,

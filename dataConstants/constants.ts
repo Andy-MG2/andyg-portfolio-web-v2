@@ -1,7 +1,7 @@
 export const NavLinks = [
     {
         id:0,
-        url:"#aboutme",
+        url:"#about",
         label: "About Andy"
     },
     {

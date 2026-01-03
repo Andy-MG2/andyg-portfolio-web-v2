@@ -3,16 +3,17 @@ import { SpinningText } from "./spinning-text";
 
 const About = () => {
   return (
-    <>
+    <div className="flex items-center justify-center">
+      <div className="relative aspect-square w-[min(82vw,360px)] overflow-visible">
+        <SpinningText className="absolute inset-0 font-extrabold font-work-sans text-sm sm:text-base" radius={17}>
+          I • write • code • and • stuff •
+        </SpinningText>
 
-      <SpinningText
-        className="font-extrabold"
-        children={"I write code and stuff"}
-      />
-      <div className="flex items-center justify-center relative -top-24.5">
-        <Avatar />
+        <div className="absolute inset-0 grid place-items-center">
+          <Avatar />
+        </div>
       </div>
-    </>
+    </div>
   );
 };
 

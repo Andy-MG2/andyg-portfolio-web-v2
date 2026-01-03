@@ -5,7 +5,7 @@ import Image from "next/image";
 const ContactMe = () => {
   return (
     <> 
-    <div className = "justify-center flex font-bold">
+    <div className = "justify-center flex font-bold font-work-sans">
       Connect With Me:
     </div>
     <div className="bg-white flex justify-center items-center h-16 space-x-4 font-bold ">

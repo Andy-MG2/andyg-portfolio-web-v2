@@ -1,20 +1,56 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const workSans = localFont({
+  src: [
+    {
+      path: "./fonts/WorkSans-Black.ttf",
+      weight: "900",
+      style: "black",
+    },
+    {
+      path: "./fonts/WorkSans-ExtraBold.ttf",
+      weight: "800",
+      style: "extrabold",
+    },
+    {
+      path: "./fonts/WorkSans-Bold.ttf",
+      weight: "700",
+      style: "bold",
+    },
+    {
+      path: "./fonts/WorkSans-SemiBold.ttf",
+      weight: "600",
+      style: "semibold",
+    },
+    {
+      path: "./fonts/WorkSans-Medium.ttf",
+      weight: "500",
+      style: "medium",
+    },
+    {
+      path: "./fonts/WorkSans-Regular.ttf",
+      weight: "400",
+      style: "regular",
+    },
+    {
+      path: "./fonts/WorkSans-Thin.ttf",
+      weight: "200",
+      style: "thin",
+    },
+    {
+      path: "./fonts/WorkSans-ExtraLight.ttf",
+      weight: "100",
+      style: "extralight",
+    },
+  ],
+  variable: "--font-work-sans",
 });
 
 export const metadata: Metadata = {
-  title: "AG Portfolio",
-  description: "Project Portfolio",
+  title: "YC Directory",
+  description: "Pitch, Vote and Grow",
 };
 
 export default function RootLayout({
@@ -24,10 +60,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={workSans.variable}>
+          {children}
+   
       </body>
     </html>
   );
