@@ -4,7 +4,7 @@ import { AnimatedThemeToggler } from "./Theme/animated-theme-toggler";
 
 const Navbar = () => {
   return (
-    <header className="fixed top-0 z-50 w-full bg-white shadow-sm dark:bg-zinc-950 dark:text-zinc-100">
+    <header className="fixed top-0 z-50 w-full bg-white shadow-sm dark:bg-zinc-950 dark:text-zinc-100 dark:border-b-2 dark:border-gray-800">
       <nav className="mx-auto grid h-16 max-w-6xl grid-cols-[1fr_auto_1fr] items-center px-4 font-work-sans font-bold">
         {/* left spacer (keeps center truly centered) */}
         <div />

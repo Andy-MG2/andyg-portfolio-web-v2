@@ -74,6 +74,16 @@ export const RadarSkills = [
 
 ];
 
+export const Project = [
+    {
+        id:1,
+        name: "CR Emotion Recognition",
+        url: "",
+        image: ""
+    },
+
+]
+
 export const Contact = [
     {
         id: 1,
