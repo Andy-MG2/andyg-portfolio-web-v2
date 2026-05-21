@@ -12,7 +12,7 @@ const Skills = () => {
           <div className="mb-10 text-center">
             <p className="text-sm font-medium text-zinc dark:text-white ">Skills</p>
             <h2 className="mt-2 text-3xl font-semibold  text-black-100 font-work-sans dark:text-white">
-              Skill Chart
+              Radar Chart
             </h2>
             <p className="mx-auto mt-2 max-w-xl text-sm text-zinc dark: dark:text-white">
               I just thought the pokemon radar chart looked cool...

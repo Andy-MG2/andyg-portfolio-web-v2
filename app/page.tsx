@@ -12,10 +12,10 @@ export default function Home() {
       <section>
         <Navbar />
       </section>
-      <section id="about" className = "scroll-mt-16 pt-55 pb-55 ">
+      <section id="about" className = "scroll-mt-65 mt-65 mb-60 ">
         <AboutMe />
       </section>
-      <section id="projects">
+      <section id="projects" className ="scroll-mt-65">
         <Projects />
       </section>
       <section  className = "scroll-mt-5" id="skills">

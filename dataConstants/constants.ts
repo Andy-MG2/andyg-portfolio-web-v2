@@ -12,7 +12,7 @@ export const NavLinks = [
     {
         id:2,
         url:"#projects",
-        label: "Project"
+        label: "Projects"
     },
     {
         id:3,
@@ -77,9 +77,9 @@ export const RadarSkills = [
 export const Project = [
     {
         id:1,
-        name: "CR Emotion Recognition",
+        name: "Clash Royale Emotion Recognition",
         url: "",
-        image: ""
+        image: "/projects/jynxzi.jpg"
     },
 
 ]
