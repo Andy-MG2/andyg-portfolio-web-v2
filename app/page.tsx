@@ -15,7 +15,7 @@ export default function Home() {
       <section id="about" className = "scroll-mt-65 mt-65 mb-60 ">
         <AboutMe />
       </section>
-      <section id="projects" className ="scroll-mt-65">
+      <section id="projects" className ="scroll-mt-60 sm:scroll-mt-33 md:scroll-mt-33 ">
         <Projects />
       </section>
       <section  className = "scroll-mt-5" id="skills">

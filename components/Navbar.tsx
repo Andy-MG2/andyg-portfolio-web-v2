@@ -1,34 +1,40 @@
+
 import { NavLinks } from "@/dataConstants/constants";
 import Link from "next/link";
 import { AnimatedThemeToggler } from "./Theme/animated-theme-toggler";
 
 const Navbar = () => {
   return (
-    <header className="fixed top-0 z-50 w-full bg-white shadow-sm dark:bg-zinc-950 dark:text-zinc-100 dark:border-b-2 dark:border-gray-800">
-      <nav className="mx-auto grid h-16 max-w-6xl grid-cols-[1fr_auto_1fr] items-center px-4 font-work-sans font-bold">
-        {/* left spacer (keeps center truly centered) */}
-        <div />
+   <header className="fixed top-0 z-50 w-full border-b border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-100">
+  
+  <nav className="mx-auto grid h-16 max-w-6xl grid-cols-[40px_1fr_40px] items-center px-4 font-work-sans font-bold">
+    
+    {/* LEFT BUTTON */}
+    <div className="flex items-center justify-start">
+      <AnimatedThemeToggler />
+    </div>
 
-        {/* centered links */}
-        <div className="flex justify-center items-center gap-2 sm:gap-4">
-          {NavLinks.map((link) => (
-            <Link
-              key={link.id}
-              href={link.url}
-              scroll
-              className="whitespace-nowrap hover:underline text-xs xs:text-base"
-            >
-              {link.label}
-            </Link>
-          ))}
-        </div>
+    {/* PERFECTLY CENTERED LINKS */}
+    <div className="flex items-center justify-center gap-3 sm:gap-5">
+      {NavLinks.map((link) => (
+        <Link
+          key={link.id}
+          href={link.url}
+          scroll
+          className="whitespace-nowrap text-[11px] sm:text-sm md:text-base hover:underline"
+        >
+          {link.label}
+        </Link>
+      ))}
+    </div>
 
-        {/* right toggler */}
-        <div className="flex justify-end">
-          <AnimatedThemeToggler />
-        </div>
-      </nav>
-    </header>
+    {/* RIGHT SPACER */}
+    <div />
+    
+  </nav>
+</header>
   );
 };
+
 export default Navbar;
+

@@ -11,6 +11,7 @@ html { scroll-behavior: smooth; }
 ::view-transition-old(root), ::view-transition-new(root) {
     animation: none;
     mix-blend-mode: normal;
+    overflow-y: scroll;
 }
 
 ::view-transition-old(root),
@@ -18,3 +19,4 @@ html { scroll-behavior: smooth; }
   animation: none;
   mix-blend-mode: normal;
 }
+

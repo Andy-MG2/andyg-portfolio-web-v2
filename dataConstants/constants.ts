@@ -6,14 +6,15 @@ export const NavLinks = [
     },
     {
         id:1,
-        url:"#skills",
-        label: "Skills"
-    },
-    {
-        id:2,
         url:"#projects",
         label: "Projects"
     },
+    {
+        id:2,
+        url:"#skills",
+        label: "Skills"
+    },
+    
     {
         id:3,
         url:"#contact",
@@ -78,8 +79,16 @@ export const Project = [
     {
         id:1,
         name: "Clash Royale Emotion Recognition",
-        url: "",
-        image: "/projects/jynxzi.jpg"
+        url: "https://github.com/Andy-MG2/CRFaceRecognition",
+        image: "/projects/jynxzi.jpg",
+        description: "Real-time facial emotion recognition system using ResNet18, OpenCV, and PyTorch with live webcam inference and Clash Royale emote reactions."
+    },
+    {
+        id:2,
+        name: "Clementine",
+        url: "https://github.com/Prateek-Wali/Clementine",
+        image: "/projects/Clementine.jpeg",
+        description: "AI-powered relapse prevention system built with Fitbit heart rate monitoring, Google Places API trigger detection, Claude reasoning, and Vonage alert automation."
     },
 
 ]
